@@ -1,0 +1,78 @@
+
+/* --- 基本設定與頁面置中 --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5; /* 淺灰色背景 */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* --- 主要容器，用於定位按鈕 --- */
+.page-container {
+    position: relative;
+    padding: 20px;
+}
+
+/* --- 表格外層容器，用於實現外邊框 --- */
+.table-wrapper {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 2px solid #00684a; /* 深綠色外邊框 */
+}
+
+/* --- 表格主要樣式 --- */
+.layout-table {
+    width: 100%;
+    /* 關鍵：讓儲存格邊框分離，才能使用 border-spacing */
+    border-collapse: separate;
+    border-spacing: 8px; /* 儲存格之間的間距 */
+}
+
+/* --- 所有儲存格的通用樣式 (td, th) --- */
+.layout-table td,
+.layout-table th {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #b0b0b0;
+    background-color: #f9f9f9; /* 預設儲存格背景色 */
+    min-width: 60px;
+    height: 50px;
+}
+
+/* --- 表格頭部 (thead) 和腳部 (tfoot) 的特殊樣式 --- */
+.layout-table thead th,
+.layout-table tfoot td {
+    background-color: #00684a; /* 深綠色背景 */
+    color: white;
+    border-color: #00684a;
+    height: 40px;
+}
+
+/* --- 綠色合併儲存格的樣式 --- */
+.layout-table .merged,
+.layout-table .merged-large {
+    background-color: #a3d9a5; /* 淺綠色背景 */
+    border-color: #5f9d61;
+}
+
+/* --- HTML 按鈕樣式 --- */
+.html-button {
+    position: absolute;
+    top: 100px;
+    right: -25px; /* 讓按鈕一半在容器外 */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
