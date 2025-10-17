@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout Task</title>
+    <link rel="stylesheet" href="20251017-5.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <div class="table-wrapper">
+            <table class="layout-table">
+                <thead>
+                    <tr>
+                        <th colspan="6">Table Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td class="merged" colspan="3" rowspan="2">7</td>
+                        <td class="merged" colspan="3" rowspan="2">8</td>
+                    </tr>
+                    <tr>
+                        </tr>
+                    <tr>
+                        <td class="merged" rowspan="2">9</td>
+                        <td>10</td>
+                        <td class="merged" rowspan="2">11</td>
+                        <td>12</td>
+                        <td class="merged" rowspan="2">13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td class="merged-large" colspan="4" rowspan="3">25</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Table footnote</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
